@@ -18,7 +18,7 @@ class Dictionary():
     def add_dict(self, path):
         words = []
 
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             for i, line in enumerate(f):
                 line = line.strip("\n").strip()
                 if not line:
